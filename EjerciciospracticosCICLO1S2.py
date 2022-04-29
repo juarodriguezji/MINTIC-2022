@@ -23,24 +23,91 @@
 # else:
 #     print("Prestamo no concedido o programa no concluyente")
 
-# #Ejercicio numero 4 Digitos
+#Ejercicio numero 4 Digitos
+# Num1=int(input("Por favor ingrese el primer numero :"))
+# Pares=0
+# Impares=0
+# Ceros=0
+# if Num1==0:
+#     Ceros=Ceros+1
+# if (Num1%2)==0 and Num1>0:
+#     Pares=Pares+1
+# elif (Num1%2!=0):
+#     Impares=Impares+1
+# Num2=int(input("Por favor ingrese el segundo numero :"))
+# if Num2==0:
+#     Ceros=Ceros+1
+# if (Num2%2)==0 and Num2>0:
+#     Pares=Pares+1
+# elif (Num2%2!=0):
+#     Impares=Impares+1
+# Num3=int(input("Por favor ingrese el tercer numero :"))
+# if Num3==0:
+#     Ceros=Ceros+1
+# if (Num3%2)==0 and Num3>0:
+#     Pares=Pares+1
+# elif (Num3%2!=0):
+#     Impares=Impares+1
+# Num4=int(input("Por favor ingrese el cuarto numero :"))
+# if Num4==0:
+#     Ceros=Ceros+1
+# if (Num4%2)==0 and Num4>0:
+#     Pares=Pares+1
+# elif (Num4%2!=0):
+#     Impares=Impares+1
+# print("El numero ingresado es %d%d%d%d, asi mismo, el total de numeros pares es %d y el total de impares es %d.Complementario tiene %d ceros."%(Num1,Num2,Num3,Num4,Pares,Impares,Ceros))
 
 # #Ejercicio Dos numeros enteros
-# Num1=int(input("Ingrese el primer numero"))
-# Num2=int(input("Ingrese el segundo numero"))
-# Dif=Num2-Num1
+# Numa=int(input("Ingrese el primer digito del primer numero:"))
+# Numb=int(input("Ingrese el segundo digito del primer numero:"))
+# Numc=int(input("Ingrese el primer digito del segundo numero:"))
+# Numd=int(input("Ingrese el segundo digito del segundo numero:"))
+
 
 #Ejercicio horas extra
-Horas_T=int(input("Por favor ingrese el numero de horas:"))
-Horas_Normal=8
-Horas_Extra=Horas_T-Horas_Normal
-Horas_Extra_Doble=0
-Horas_Extra_Triple=0
-if Horas_Extra >0 and Horas_Extra>8:
-    Horas_Extra_Doble=8
-    Horas_Extra_Triple=Horas_T-8-8
+# Horas_T=int(input("Por favor ingrese el numero de horas:"))
+# Horas_Normal=8
+# Horas_Extra=Horas_T-Horas_Normal
+# Horas_Extra_Doble=0
+# Horas_Extra_Triple=0
+# if Horas_Extra >0 and Horas_Extra>8:
+#     Horas_Extra_Doble=8
+#     Horas_Extra_Triple=Horas_T-8-8
+# else:
+#     Horas_Extra_Doble=Horas_T-8
+#     Horas_Extra_Triple=0
+# print("Su pago del dia será: Horas Normales %d , Horas Extras(Pago Doble) %d y Horas Extra(Pago Triple) %d"%(Horas_Normal,Horas_Extra_Doble,Horas_Extra_Triple))  
+
+#Ejercicio museo Python
+print("Hola:  Bienvenido al museo de Python --_-_-_-o~")
+Edad=int(input("Si deseas saber el precio de tu entrada, por favor indica tu edad: "))
+if Edad<=6:
+    print("Genial! Entras gratis al museo")
 else:
-    Horas_Extra_Doble=Horas_T-8
-    Horas_Extra_Triple=0
-print("Su pago del dia será: Horas Normales %d , Horas Extras(Pago Doble) %d y Horas Extra(Pago Triple) %d"%(Horas_Normal,Horas_Extra_Doble,Horas_Extra_Triple))  
-    
+    Cupon=input("OK,¿Tiene bono de descuento para este mes? responde (s/n):")
+    if 6<Edad<22:
+        if Cupon=="s":
+            Precio_O=9
+            Precio_D=9*0.9
+            print("El precio de la entrada sin descuento es de %d euros. Con el descuento sería: %d"%(Precio_O,Precio_D))
+        else:
+            Precio_O=9
+            print("El precio de la entrada sin descuento es: %d"%(Precio_O))
+    elif 21<Edad<67:
+        if Cupon=="s":
+            Precio_O=14
+            Precio_D=14*0.9
+            print("El precio de la entrada sin descuento es de %d euros. Con el descuento sería: %d"%(Precio_O,Precio_D))
+        else:
+            Precio_O=14
+            print("El precio de la entrada sin descuento es: %d"%(Precio_O))
+    elif Edad>=67:
+        if Cupon=="s":
+            Precio_O=6
+            Precio_D=6*0.9
+            print("El precio de la entrada sin descuento es de %d euros. Con el descuento sería: %d"%(Precio_O,Precio_D))
+        else:
+            Precio_O=6
+            print("El precio de la entrada sin descuento es: %d"%(Precio_O))
+print("Disfrute parce!")
+            
